@@ -198,6 +198,8 @@ document.querySelectorAll('.speed-controls').forEach(function(group) {
         }
 
         var lower = name.toLowerCase();
+        lower = lower.replace(/^(bf16|nvfp4)_/, '');
+
         if (lower === 'robot_demo' || lower === 'robot_demo_nvfp4') {
             return { key: lower };
         }

@@ -271,6 +271,18 @@ a {
     background: var(--accent);
 }
 
+.intro-video {
+    display: block;
+    width: min(920px, 100%);
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 0 auto 22px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #101615;
+    object-fit: contain;
+}
+
 .hero-video-compare {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
